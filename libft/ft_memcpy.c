@@ -6,7 +6,7 @@
 /*   By: nvreeke <marvin@codam.nl>                    +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/09 19:20:33 by nvreeke        #+#    #+#                */
-/*   Updated: 2019/04/30 18:27:06 by jvisser       ########   odam.nl         */
+/*   Updated: 2019/08/26 13:20:06 by jvisser       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	cpy_8(long *a, long *b)
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	int		k;
-	char*	a;
-	char*	b;
+	char	*a;
+	char	*b;
 
 	a = (char*)dst;
 	b = (char*)src;
