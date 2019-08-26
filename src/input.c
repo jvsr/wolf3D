@@ -6,7 +6,7 @@
 /*   By: nvreeke <nvreeke@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/02/28 13:51:14 by nvreeke        #+#    #+#                */
-/*   Updated: 2019/05/23 19:51:55 by jvisser       ########   odam.nl         */
+/*   Updated: 2019/08/26 13:53:45 by jvisser       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,12 @@ static void	set_number(int *i, int *map_point, char *line)
 		(*i)++;
 	if (ft_isdigit(line[*i]) || line[*i] == '-')
 		*map_point = ft_atoi(&line[*i]);
-	while (ft_isdigit(line[*i]) || line[*i] == '-')
+	else if (ft_tolower(line[*i]) == 'p')
+	{
+		*map_point = 999;
+	}
+	while (ft_isdigit(line[*i]) || line[*i] == '-'
+		|| ft_tolower(line[*i]) == 'p')
 		(*i)++;
 }
 

@@ -6,7 +6,7 @@
 /*   By: jvisser <jvisser@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/04/12 14:35:19 by nvreeke        #+#    #+#                */
-/*   Updated: 2019/05/23 19:40:24 by jvisser       ########   odam.nl         */
+/*   Updated: 2019/08/26 13:34:03 by jvisser       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ t_mlx		*init_program(char *filename)
 	mlx->map = init_map(filename, mlx);
 	mlx->keys = init_keys();
 	mlx->screen = init_screen(mlx);
-	mlx->player = init_player();
+	mlx->player = init_player(mlx->map);
 	MENU_PTR = mlx_xpm_file_to_image(MLX_PTR, "textures/menu3.xpm", &x, &y);
 	return (mlx);
 }

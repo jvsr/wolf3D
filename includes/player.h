@@ -6,7 +6,7 @@
 /*   By: nvreeke <nvreeke@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/05/23 14:22:37 by nvreeke        #+#    #+#                */
-/*   Updated: 2019/05/23 20:07:37 by jvisser       ########   odam.nl         */
+/*   Updated: 2019/08/26 13:28:16 by jvisser       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ typedef struct	s_player
 **	Player functions
 */
 
-t_player		*init_player(void);
+t_player		*init_player(t_map *map);
 void			rotate(t_mlx *mlx);
 void			check_player_move(t_mlx *mlx);
 void			check_player_interaction(t_mlx *mlx);
